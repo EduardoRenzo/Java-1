@@ -3,19 +3,12 @@ package desafio.boasvindas;
 import java.util.Scanner;
 
 public class Programa {
-    
     public static void main(String[] args) {
-        // Tarefa 2: Solicitar o nome
-        System.out.println("Digite seu nome:");
-        
-        // Tarefa 4: Ler o nome
-        try ( // Tarefa 3: Criar o Scanner
+       System.out.println("Digite seu nome:");
+        try ( 
                 Scanner scanner = new Scanner(System.in)) {
-            // Tarefa 4: Ler o nome
             String nome = scanner.nextLine();
-            // Tarefa 5: Exibir boas-vindas
             System.out.println("Olá " + nome + "! Seja bem-vindo(a) ao desafio!");
-            // Tarefa 6: Fechar o Scanner
         }
     }
 }
